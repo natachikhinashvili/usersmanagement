@@ -22,6 +22,11 @@ public class Users {
         return userservice.getAllUsers();
     }
     
+    @GetMapping("/category/{category}")
+    public List<User> getUserByCategory(@PathVariable String category){
+        return userservice.getUserByCategory(category);
+    }
+
     @PostMapping("add")
     public String addUser(@RequestBody User user){
         return userservice.addUser(user);

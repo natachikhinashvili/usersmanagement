@@ -21,5 +21,9 @@ public class UserService {
         userDao.save(user);
         return "success";
     }
+
+    public List<User> getUserByCategory(String category) {
+        return userDao.findByCategory(category);
+    }
     
 }

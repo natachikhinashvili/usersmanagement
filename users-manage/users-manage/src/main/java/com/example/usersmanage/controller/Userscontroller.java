@@ -11,20 +11,22 @@ import com.example.usersmanage.service.UserService;
 
 
 @RestController
-public class Users {
+@RequestMapping("/api")
+@CrossOrigin(origins = "http://localhost:3000")
+public class Userscontroller {
     
     @Autowired
     UserService userservice;
 
 
-    @GetMapping("/")
+    @GetMapping("/users")
     public List<User> getusers() {
         return userservice.getAllUsers();
     }
     
     @GetMapping("/category/{category}")
-    public List<User> getUserByCategory(@PathVariable String category){
-        return userservice.getUserByCategory(category);
+    public List<User> getUserByLanguage(@PathVariable String language){
+        return userservice.getUserByLanguage(language);
     }
 
     @PostMapping("add")

@@ -10,6 +10,6 @@ import com.example.usersmanage.User;
 @Repository
 public interface UserDAO extends JpaRepository<User, Integer>{
     
-    List<User> findByCategory(String category);
+    List<User> findByLanguage(String language);
     
 }

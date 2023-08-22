@@ -22,8 +22,8 @@ public class UserService {
         return "success";
     }
 
-    public List<User> getUserByCategory(String category) {
-        return userDao.findByCategory(category);
+    public List<User> getUserByLanguage(String language) {
+        return userDao.findByLanguage(language);
     }
     
 }

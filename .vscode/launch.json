@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "UserService",
+            "request": "launch",
+            "mainClass": "com.example.usersmanage.service.UserService",
+            "projectName": "users-manage"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-UsersManageApplication<users-manage>",
             "request": "launch",
             "cwd": "${workspaceFolder}",

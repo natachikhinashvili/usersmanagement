@@ -1,6 +1,7 @@
 import './App.css';
-import api from './api/axiosConfig';
 import {useState, useEffect} from 'react';
+import api from './api/axiosConfig';
+import Adduser from './adduser';
 
 function App() {
   const [users, setUsers] = useState();
@@ -16,23 +17,11 @@ function App() {
   useEffect(() => {
     getUsers();
   }, [])
-
   return (
     <div className="App">
-      <div>
-        <h1>All users</h1>
-        {users && users.map(user => <p key={user.id}>{user.name}</p>)}
-      </div>
-      <h2>Add user</h2>
-      <div id='formcontainer'>
-        <form>
-          <label>name</label>
-          <input></input>
-          <label>language</label>
-          <input></input>
-          <button>submit</button>
-        </form>
-      </div>
+      <h1>All users</h1>
+      {users && users.map(user => <p key={user.id}>{user.name}</p>)}
+      <Adduser/>
     </div>
   );
 }

@@ -41,9 +41,31 @@ form{
   display: flex;
   flex-direction: column;
   width: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
 #formcontainer{
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+#postcontainer{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  width: 30vw;
+  margin: 2vh;
+  padding: 1vh;
+}
+button{
+  background-color: blue;
+  color: white;
+  width: 6vw;
+  height: 5vh;
+  cursor: pointer;
+  border: none;
+  margin: 5vh;
 }

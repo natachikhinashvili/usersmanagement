@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from 'react';
 import api from './api/axiosConfig';
-import Adduser from './adduser';
+import Adduser from './Adduser';
 
 function App() {
   const [users, setUsers] = useState();

@@ -5,4 +5,4 @@
 - PostgreSQL
 - Spring
 
-![MVC architecture](./mvc-architecture.png)
+![website](./website.png)
